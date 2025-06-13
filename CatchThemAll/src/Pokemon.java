@@ -17,4 +17,9 @@ public class Pokemon {
     public String getNum() { return num; }
     public String getName() { return name; }
     public String getWeight() { return weight; }
+
+    public double getWeightInKg(String weight) {
+        String weightValue = this.weight.replace(" kg", "").trim();
+        return Double.parseDouble(weightValue);
+    }
 }
